@@ -1,3 +1,81 @@
+# PyTorch Sentiment Analysis – Deep Learning & Transformers
+
+## 📌 Project Overview
+This project implements an **advanced sentiment analysis system** using **PyTorch**, progressing from baseline neural models to **Transformer-based architectures (BERT)**.  
+The objective is to understand and compare how different deep learning models capture semantic meaning in text and improve sentiment classification accuracy.
+
+The project demonstrates a **complete NLP pipeline**: data preprocessing, tokenization, model building, training, evaluation, and inference.
+
+---
+
+## 🎯 Problem Statement
+User-generated text such as movie reviews contains rich sentiment information, but understanding context and long-term dependencies is challenging for traditional models.
+
+This project addresses:
+- How different neural architectures perform on sentiment classification
+- How **context-aware embeddings (BERT)** improve performance
+- How to build scalable NLP solutions using PyTorch
+
+---
+
+## 🧠 Models Implemented
+The project incrementally builds and evaluates the following models:
+
+1. **Neural Bag of Words (Baseline)**
+2. **Recurrent Neural Networks (LSTM / GRU)**
+3. **Convolutional Neural Networks (CNN) for Text**
+4. **Transformer-based Model (BERT + Bi-directional GRU)**
+
+Each model is trained and evaluated on the **IMDB movie reviews dataset**.
+
+---
+
+## 🏗️ Transformer-Based Architecture
+- **Pretrained BERT (bert-base-uncased)** used as embedding layer
+- Transformer weights are **frozen** for efficient training
+- **Bi-directional GRU** learns task-specific representations
+- Binary sentiment prediction using **BCEWithLogitsLoss**
+
+This approach balances **high accuracy with reduced training cost**.
+
+---
+
+## 📊 Results
+| Model | Validation Accuracy |
+|------|--------------------|
+| Neural BoW | ~84% |
+| LSTM / GRU | ~88% |
+| CNN | ~89% |
+| **BERT + BiGRU** | **~92%** |
+
+✔ Achieved **~91.5% test accuracy** using the Transformer-based model.
+
+---
+
+## 🔬 Dataset
+- **IMDB Movie Reviews Dataset**
+- 50,000 labeled reviews (positive / negative)
+- Balanced dataset
+- Tokenized using **BERT tokenizer**
+
+---
+
+## 🛠️ Tech Stack
+- **Language:** Python  
+- **Deep Learning:** PyTorch  
+- **NLP:** TorchText, HuggingFace Transformers  
+- **Models:** LSTM, GRU, CNN, BERT  
+- **Evaluation:** Accuracy, Loss  
+- **Environment:** Jupyter Notebook  
+
+---
+
+## 📂 Project Structure
+
+
+
+
+
 # PyTorch Sentiment Analysis
 
 This repo contains tutorials covering understanding and implementing sequence classification models using [PyTorch](https://github.com/pytorch/pytorch), with Python 3.9. Specifically, we'll train models to predict sentiment from movie reviews.
