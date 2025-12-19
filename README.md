@@ -72,11 +72,8 @@ This approach balances **high accuracy with reduced training cost**.
 
 ## 📂 Project Structure
 
+<img width="584" height="450" alt="image" src="https://github.com/user-attachments/assets/e8582bc5-bb73-40e8-9a70-9b94c2964add" />
 
-
-
-
-# PyTorch Sentiment Analysis
 
 This repo contains tutorials covering understanding and implementing sequence classification models using [PyTorch](https://github.com/pytorch/pytorch), with Python 3.9. Specifically, we'll train models to predict sentiment from movie reviews.
 
@@ -104,8 +101,15 @@ Install the required dependencies with: `pip install -r requirements.txt --upgra
 
     Finally, we'll show how to use the transformers library to load a pre-trained transformer model, specifically the BERT model from [this](https://arxiv.org/abs/1810.04805) paper, and use it for sequence classification.
 
-## Legacy Tutorials
 
-Previous versions of these tutorials used features from the torchtext library which are no longer available. These are stored in the [legacy](https://github.com/bentrevett/pytorch-sentiment-analysis/tree/main/legacy) directory.
 
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Swamy12S/PyTorch-Sentiment-Analysis.git
+cd PyTorch-Sentiment-Analysis
+2️⃣ Install dependencies
+pip install -r requirements.txt
 
